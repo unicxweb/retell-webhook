@@ -2,8 +2,7 @@
   "name": "retell-webhook",
   "version": "1.0.0",
   "main": "api/retell-webhook.js",
-  "type": "module",
-  "dependencies": {
-    "express": "latest"
+  "scripts": {
+    "start": "node api/retell-webhook.js"
   }
 }
