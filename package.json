@@ -1,9 +1,13 @@
 {
-  "name": "retell-webhook",
+  "name": "retell-webhook-unicx",
   "version": "1.0.0",
-  "main": "api/retell-webhook.js",
-  "type": "module",
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "@vercel/node": "^2.0.0"
+  },
   "scripts": {
-    "start": "node api/retell-webhook.js"
+    "dev": "vercel dev"
   }
 }
