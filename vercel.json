@@ -1,14 +1,15 @@
 {
   "version": 2,
-  "functions": {
-    "api/retell-webhook.js": {
-      "runtime": "nodejs20.x"
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "routes": [
     {
-      "src": "/api/retell-webhook",
-      "dest": "/api/retell-webhook.js"
+      "src": "/(.*)",
+      "dest": "/index.js"
     }
   ]
 }
