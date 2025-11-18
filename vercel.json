@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/retell-webhook.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/retell-webhook", "dest": "/api/retell-webhook.js" }
+  ]
+}
