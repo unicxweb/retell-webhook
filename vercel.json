@@ -4,5 +4,11 @@
     "api/retell-webhook.js": {
       "runtime": "nodejs20.x"
     }
-  }
+  },
+  "routes": [
+    {
+      "src": "/api/retell-webhook",
+      "dest": "/api/retell-webhook.js"
+    }
+  ]
 }
